@@ -25,23 +25,14 @@ class Customer:
 		return False
 
 
-# Inside this method is the variables that make the parameter
-
 print('\t\t\t---------------------\n')
 print('\t\t---------------------\n')
 print('\t\tCreating Costco Membership\n')
 print('\t\t---------------------\n')
 print('\t\t\t---------------------\n')
 print('\tNames and Membership type.\n')
-#Arguments follow method parameters 
+# Arguments follow method parameters 
 
-#c=Customer("James","Gold.\n")
-#print(c.name, c.membership_type)
-
-#c2=Customer("Mike","Silver.\n")
-#print(c2.name, c2.membership_type)
-
-#Using lists to create customer database instead
 customers = [Customer("james","gold"),
 			Customer("mike","silver"),
 			Customer("sean","gold"),
@@ -55,24 +46,24 @@ print(customers[1].name.title())
 print(customers[1].membership_type.title())
 
 print('\n===========================\n')
-#New type of membership for customer Mike
+# New type of membership for customer Mike
 customers[1].update_membership("gold")
 print(customers[1].membership_type.title() + ' is the members new tier!')
 
 print('\n===========================\n')
-#Mike is now a Gold member
+# Mike is now a Gold member
 Customer.calc_customer()
-#All Customer class invoked calculating position, because self isn't present
+# All Customer class invoked calculating position, because self isn't present
 
 print('\n===========================\n')
 print(customers[0])
-#when you don't want the location but the actual data
+# When you don't want the location but the actual data
 print('\n===========================\n')
-#say you want a quick access to customer list 
-#create a method for and in (loop) using Class Customer
+# Say you want a quick access to customer list 
+# Create a method for and in (loop) using Class Customer
 Customer.print_all_customers(customers)
 print('\n===========================\n')
-#Using the equals method to compare customers
+# Using the equals method to compare customers
 print(customers[0] == customers[1])
 print(customers[0] == customers[3])
 print('\n===========================\n')
