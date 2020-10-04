@@ -1,7 +1,4 @@
-#Creating a class ---> method initializer a.k.a constructor (java and C++)
-#initialize values to data members of the class in this case customer for this
-#- sample I am creating one constructor with a custom method with OOP in mind so
-#- I will throw in static method, string method etc
+
 # **** IMPORTANT I do not go over Encapsulation Polymorphism and Inheritance in this demo ****
 class Salesteam:
 	def __init__(self,name, teammate_type):
@@ -50,24 +47,24 @@ customers = [Customer("james","gold"),
 			Customer("sean","gold"),
 			Customer("laura","silver")]
 print(customers[0].name.title())
-print('\t-----\n')
+
 print(customers[0].membership_type.title())
-print('-----\n')
+
 print(customers[1].name.title())
-print('\t-----\n')
+
 print(customers[1].membership_type.title())
-print('-----\n')
-print('===========================\n')
+
+print('\n===========================\n')
 #New type of membership for customer Mike
 customers[1].update_membership("gold")
 print(customers[1].membership_type.title() + ' is the members new tier!')
-print('\t-----\n')
-print('===========================\n')
+
+print('\n===========================\n')
 #Mike is now a Gold member
 Customer.calc_customer()
 #All Customer class invoked calculating position, because self isn't present
-print('\t-----\n')
-print('===========================\n')
+
+print('\n===========================\n')
 print(customers[0])
 #when you don't want the location but the actual data
 print('\n===========================\n')
